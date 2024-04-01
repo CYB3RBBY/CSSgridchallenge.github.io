@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    font-family:"Barlow Semi Condensed";
+}
+
+html{
+    background-color:hsl(210, 46%, 95%);
+    padding:8rem;
+}
+
+section.grid-container {
+    display:grid;
+    gap: 1.2rem 1.5rem;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+}
+
+.grid-items{
+    padding:2.5em;
+    border-radius: 0.5em;
+}
+
+.grid-item1{
+  background-color: hsl(263, 55%, 52%);
+  color:white;
+  grid-column: span 2;
+}
+
+.grid-item2{
+  background-color:hsl(217, 19%, 35%);
+  color:white;
+}
+
+.grid-item3{
+  background-color:hsl(0, 0%, 100%);  
+  box-shadow: 20px 11px 20px 5px #99999980;
+  color: black;
+  grid-row: 2;
+}
+
+.grid-item4{
+  background-color:hsl(219, 29%, 14%);
+  color:white; 
+  grid-column: span 2;
+}
+
+.grid-item4 .profile-section img{
+    border: 3px solid rgb(146, 72, 215);
+}
+
+.grid-item5{
+  background-color:hsl(0, 0%, 100%); 
+  box-shadow: 20px 11px 20px 5px #99999980;
+  color: black;
+  grid-column:4;
+  grid-row:1 / span 2;
+}
+
+.profile-section{
+    display:flex;
+    gap: 0.9em;
+    margin-bottom: 1em;
+}
+
+.profile-section img{
+    height:2em;
+    border-radius: 3em;
+    border: 3px solid rgba(255, 255, 255, 0.601);
+}
+
+.profile-section h6 {
+    font-weight:400;
+    font-size:0.8em;
+}
+
+.profile-section p {
+    color: rgba(255, 255, 255, 0.505);
+    font-size:0.7em;
+}
+
+.grid-item5 .profile-section p {
+    color: rgba(0, 0, 0, 0.473);
+}
+
+.grid-item3  .profile-section p {
+    color: rgba(0, 0, 0, 0.473);
+}
+
+.bold-text {
+    position: relative;
+    font-weight:500;
+    font-size:1.3em;
+    margin-bottom: 0.6em;
+    z-index:1;
+}
+
+.grid-items p {
+    font-size:0.9em;
+    color:rgba(255, 255, 255, 0.704);
+}
+
+.grid-item5 p{
+    color:rgba(0, 0, 0, 0.704);
+}
+
+.grid-item3 p{
+    color: rgba(0, 0, 0, 0.699);
+}
+
+.grid-item1 svg{
+    position: absolute;
+    z-index: auto;
+    margin: -5em 2em 0em 27em;
+}
